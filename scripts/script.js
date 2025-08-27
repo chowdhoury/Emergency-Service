@@ -23,7 +23,23 @@ for (const copy of copies) {
 
 const calls = document.getElementsByClassName('call');
 for (const call of calls) {
-    call.addEventListener('click', function () {
-        
+    call.addEventListener('click', function (e) {
+        const coinCountDisplay = document.getElementById('coinCount');
+        const coinCount = coinCountDisplay.innerText;
+        if (coinCount >= 20) {
+            const name =
+              e.currentTarget.parentNode.parentNode.getElementsByClassName(
+                "name"
+              )[0].innerText;
+            const number =
+              e.currentTarget.parentNode.parentNode.getElementsByClassName(
+                "number"
+              )[0].innerText;
+            alert("📞Calling to\n\n" + name + " : " + number);
+            coinCountDisplay.innerText = coinCount - 20;
+            
+        } else {
+            alert('Not enough balance for Calling😥')
+        }
     })
 }
