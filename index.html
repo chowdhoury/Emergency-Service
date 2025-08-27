@@ -42,7 +42,7 @@
           <div
             class="flex items-center justify-center h-[52px] w-[120px] bg-[#41FF6B1A] rounded-[50px] gap-2"
           >
-            <h2 class="font-black text-[#000000]">0</h2>
+            <h2 id="heartCount" class="font-black text-[#000000]">0</h2>
             <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="" />
           </div>
           <div
@@ -54,7 +54,7 @@
           <div
             class="flex items-center justify-center bg-[#00A63E] rounded-[50px] h-[52px] w-[120px] gap-2"
           >
-            <h2 class="font-semibold text-[#FFFFFF]">0</h2>
+            <h2 id="copyCount" class="font-semibold text-[#FFFFFF]">0</h2>
             <h2 class="font-semibold text-[#FFFFFF]">Copy</h2>
           </div>
         </div>
@@ -109,6 +109,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -121,14 +122,14 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="name hind-font text-[24px] text-[#111] leading-8 font-bold">
             National Emergency Number
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">
             National Emergency
           </p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             999
           </h1>
@@ -139,12 +140,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -158,6 +159,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -170,12 +172,12 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold name">
             Police Helpline Number
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">Police</p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             999
           </h1>
@@ -186,12 +188,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -205,6 +207,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -217,14 +220,14 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold name">
             Fire Service Number
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">
             Fire Service
           </p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             999
           </h1>
@@ -235,12 +238,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -254,6 +257,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -266,14 +270,14 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold name">
             Ambulance Service
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">
             Ambulance
           </p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             1994-999999
           </h1>
@@ -284,12 +288,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -303,6 +307,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -315,14 +320,14 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold name">
             Women & Child Helpline
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">
             Women & Child Helpline
           </p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             109
           </h1>
@@ -333,12 +338,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -352,6 +357,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -364,14 +370,14 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold name">
             Anti-Corruption Helpline
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">
             Anti-Corruption
           </p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             106
           </h1>
@@ -382,12 +388,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -401,6 +407,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -413,14 +420,14 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold name">
             Electricity Helpline
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">
             Electricity Outage
           </p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             16216
           </h1>
@@ -431,12 +438,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -450,6 +457,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -462,12 +470,12 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold name">
             Brac Helpline
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">Brac</p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             16445
           </h1>
@@ -478,12 +486,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -497,6 +505,7 @@
               alt=""
             />
             <svg
+            class="heart"
               xmlns="http://www.w3.org/2000/svg"
               width="24px"
               height="24px"
@@ -509,14 +518,14 @@
               />
             </svg>
           </div>
-          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold">
+          <h2 class="hind-font text-[24px] text-[#111] leading-8 font-bold name">
             Bangladesh Railway Helpline
           </h2>
           <p class="leading-normal roboto-font mb-6 text-[#5C5C5C]">
             Bangladesh Railway
           </p>
           <h1
-            class="leading-normal roboto-font text-[#111] font-bold text-[32px]"
+            class="leading-normal roboto-font text-[#111] font-bold text-[32px] number"
           >
             163
           </h1>
@@ -527,12 +536,12 @@
           </p>
           <div class="mt-6 flex gap-2">
             <button
-              class="hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
+              class="copy hover:text-[#fff] hover:bg-[#000] hover:duration-300 border-[1px] border-[#D4D6D5] roboto-font flex-1 p-4 rounded-[8px] bg-[#fff] text-[#5C5C5C]"
             >
               <i class="fa-regular fa-copy"></i> Copy
             </button>
             <button
-              class="roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
+              class="call roboto-font bg-[#00A63E] hover:duration-300 rounded-[8px] text-[#fff] text-[16px] flex-1 p-4 hover:bg-[#000]"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -541,5 +550,7 @@
       </div>
     </main>
     <footer></footer>
+    <!-- script -->
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
