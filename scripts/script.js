@@ -37,9 +37,31 @@ for (const call of calls) {
               )[0].innerText;
             alert("📞Calling to\n\n" + name + " : " + number);
             coinCountDisplay.innerText = coinCount - 20;
-            
+            const parent = document.getElementById("history");
+            const child = document.createElement('div');
+            const time = new Date().toLocaleTimeString('en-US', { 
+                    hour: 'numeric', 
+                    minute: '2-digit', 
+                    second: '2-digit', 
+                    hour12: true 
+                });
+            child.innerHTML = `<div class="singleHistory bg-[#FAFAFA] p-4 flex justify-between items-center rounded-[8px] gap-2 mt-2">
+                <div>
+                    <h2 class="inter-font text-[#111] text-[18px] font-semibold">${name}</h2>
+                    <p class=" hind-font text-[18px] text-[#5C5C5C]">${number}</p>
+                </div>
+                <div>
+                    <p class="hind-font text-[18px] text-[#111]">${time}</p>
+                </div>
+            </div>`;
+            parent.appendChild(child);
         } else {
             alert('Not enough balance for Calling😥')
         }
     })
 }
+
+document.getElementById("clear").addEventListener("click", function () {
+  const parent = document.getElementById("history");
+  parent.innerHTML = "";
+});
